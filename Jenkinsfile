@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    triggers {
+  			upstream 'serenity-bdd-ui-pipeline'
+		}
     stages {
 		stage('Initialize'){
 			steps{
